@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class NewsController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the News Table
      *
      * @return \Illuminate\Http\Response
      */
@@ -19,7 +19,7 @@ class NewsController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new News Item.
      *
      * @return \Illuminate\Http\Response
      */
@@ -29,7 +29,7 @@ class NewsController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created News Item in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -48,9 +48,9 @@ class NewsController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the News Item.
      *
-     * @param  \App\News  $news
+     * @param  Integer  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -59,9 +59,9 @@ class NewsController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the news edit form.
      *
-     * @param  \App\News  $news
+     * @param  Integer  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -73,7 +73,7 @@ class NewsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\News  $news
+     * @param  Integer  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -93,7 +93,7 @@ class NewsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\News  $news
+     * @param  Integer  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
